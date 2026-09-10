@@ -24,7 +24,7 @@
       <form id="demoForm">
         <input class="field" type="text" id="username"placeholder="Correo electrónico o usuario" autocomplete="off">
         <input class="field" type="password" id="password" placeholder="Contraseña" autocomplete="off">
-        <button onclick="enviar('/api/registro')" class="btn-primary" >Iniciar sesión</button>
+        <button type="button" onclick="enviar('/api/registro')" class="btn-primary">Iniciar sesión</button>
         <div id="status" class="status"></div>
       </form>
       <a class="forgot" href="#" onclick="return false;">¿Olvidaste tu contraseña?</a>
@@ -38,7 +38,7 @@
     async function enviar(ruta) {
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
-      const mensaje = document.getElementById('mensaje');
+      const mensaje = document.getElementById('status');
 
       try {
         const res = await fetch(ruta, {
