@@ -1,0 +1,161 @@
+:root {
+    --blue: #1877F2;
+    --blue-dark: #0f5fd1;
+    --ink: #050505;
+    --muted: #65676B;
+    --border: #DADDE1;
+    --bg: #FFFFFF;
+    --practice-bg: #FFF7E6;
+    --practice-border: #F5C453;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+  }
+
+  .practice-banner {
+    background: var(--practice-bg);
+    border-bottom: 1px solid var(--practice-border);
+    color: #7a5b00;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .practice-banner strong { font-weight: 600; }
+
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 24px 40px;
+  }
+
+  .brand-side {
+    flex: 1 1 420px;
+    max-width: 420px;
+  }
+
+  .brand-side .logo {
+    width: 48px;
+    height: 48px;
+    color: var(--blue);
+    margin-bottom: 24px;
+  }
+
+  .brand-side h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .brand-side h1 .accent { color: var(--blue); }
+
+  .form-side {
+    flex: 1 1 380px;
+    max-width: 396px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .form-side h2 {
+    font-size: 22px;
+    margin: 4px 0 20px;
+  }
+
+  .field {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .field:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 1px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 14px 0;
+    background: var(--blue);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+
+  .btn-primary:hover { background: var(--blue-dark); }
+
+  .forgot {
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .forgot:hover { text-decoration: underline; }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 20px 0;
+  }
+
+  .btn-secondary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    background: #f0f2f5;
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footnote {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 18px;
+  }
+
+  .status {
+    display: none;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #E7F3FF;
+    color: #0f5fd1;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    .brand-side h1 { font-size: 30px; text-align: center; }
+    .brand-side { text-align: center; }
+    .brand-side .logo { margin: 0 auto 20px; }
+  }

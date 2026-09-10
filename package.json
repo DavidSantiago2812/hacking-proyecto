@@ -1,0 +1,8 @@
+{
+  "name": "login-supabase-vercel",
+  "version": "1.0.0",
+  "description": "Login sencillo con Supabase (PostgreSQL) desplegado en Vercel",
+  "dependencies": {
+    "pg": "^8.11.5"
+  }
+}
